@@ -1,0 +1,29 @@
+{
+  "name": "nodecmd",
+  "version": "0.0.1",
+  "author": "lfbzhm",
+  "description": "node io for command line",
+  "keywords": [
+    "input",
+    "output",
+    "stdin",
+    "stdout",
+    "process.stdin.on",
+    "process.stdout.write",
+    "scanf",
+    "printf",
+    "cin",
+    "cout"
+  ],
+  "scripts": {
+    "preinstall": "node-gyp configure && node-gyp build",
+    "pretest": "node-gyp configure && node-gyp build",
+    "test": "node test/test.js"
+  },
+  "homepage": "https://github.com/lifubang/nodecmd",
+  "repository": "git://github.com/lifubang/nodecmd",
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT"
+}
