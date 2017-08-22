@@ -1,7 +1,12 @@
-# nodecmd
+# node-stdio
+A node interface for stdio like: cin, cout, scanf and printf.
 
+# how to install
+npm install node-stdio
+
+# use examples
 ```js
-var cmd = require('nodecmd');
+var cmd = require('node-stdio');
 
 function test() {
     cmd.print('This output is from nodecmd interface:\n');
