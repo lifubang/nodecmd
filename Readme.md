@@ -24,3 +24,6 @@ function test() {
 
 test();
 ```
+
+# Thanks
+lineprocessor.cc in v8 examples
