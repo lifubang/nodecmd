@@ -2,7 +2,8 @@
 A node interface for stdio like: cin, cout, scanf and printf.
 
 # how to install
-npm install node-stdio
+*  npm install node-stdio
+*  need node-gyp path
 
 # api
 *   gets(size)
