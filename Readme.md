@@ -6,17 +6,17 @@ npm install node-stdio
 
 # api
  * gets(size)
-     read number of size characters from stdin, or util meets \n. \n may in the return string.
+    read number of size characters from stdin, or util meets \n. \n may in the return string.
  * printsth(sth, ...)
-     display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is no '\n'.
+    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is no '\n'.
  * print(sth, ...)
-     display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is a '\n'.
+    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is a '\n'.
  * readInt()
-     read a int or long number from stdin.
+    read a int or long number from stdin.
  * readDouble()
-     read a float or double number from stdin.
+    read a float or double number from stdin.
  * read_line
-     read number of 1024 characters from stdin, or util meets \n. \n may in the return string.
+    read number of 1024 characters from stdin, or util meets \n. \n may in the return string.
 
 # use examples
 ```js
