@@ -5,17 +5,17 @@ A node interface for stdio like: cin, cout, scanf and printf.
 npm install node-stdio
 
 # api
- * gets(size)
+*   gets(size)
     read number of size characters from stdin, or util meets \n. \n may in the return string.
- * printsth(sth, ...)
+*   printsth(sth, ...)
     display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is no '\n'.
- * print(sth, ...)
+*   print(sth, ...)
     display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is a '\n'.
- * readInt()
+*   readInt()
     read a int or long number from stdin.
- * readDouble()
+*   readDouble()
     read a float or double number from stdin.
- * read_line
+* read_line
     read number of 1024 characters from stdin, or util meets \n. \n may in the return string.
 
 # use examples
