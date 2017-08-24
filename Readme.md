@@ -7,17 +7,17 @@ A node interface for stdio like: cin, cout, scanf and printf.
 
 # api
 *   gets(size)
-    read number of size characters from stdin, or util meets \n. \n may in the return string.
+<br />    read number of size characters from stdin, or util meets \n. \n may in the return string.
 *   printsth(sth, ...)
-    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is no '\n'.
+<br />    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is no '\n'.
 *   print(sth, ...)
-    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is a '\n'.
+<br />    display sth in stdou, if there are more than on args, the diaplay split by " ", in the end there is a '\n'.
 *   readInt()
-    read a int or long number from stdin.
+<br />    read a int or long number from stdin.
 *   readDouble()
-    read a float or double number from stdin.
+<br />    read a float or double number from stdin.
 * read_line
-    read number of 1024 characters from stdin, or util meets \n. \n may in the return string.
+<br />    read number of 1024 characters from stdin, or util meets \n. \n may in the return string.
 
 # use examples
 ```js
@@ -47,6 +47,18 @@ function test() {
 }
 
 test();
+```
+
+# OJ Example
+* calc a+b, a b split by a space
+```js
+var cmd = require('node-stdio')
+var a, b;
+var solveMeFirst = (a,b) => a+b;
+while((a=cmd.readInt())!=null && (b=cmd.readInt())!=null){
+    let c = solveMeFirst(a, b);
+    cmd.print(c);
+}
 ```
 
 # Thanks
