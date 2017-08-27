@@ -39,6 +39,7 @@ v8::Handle<v8::String> ReadLineEx() {
   const int kBufferSize = 1024 + 1;
   char buffer[kBufferSize];
 
+retry:
   char* res;
   {
     res = fgets(buffer, kBufferSize, stdin);
@@ -47,6 +48,9 @@ v8::Handle<v8::String> ReadLineEx() {
   if (res == NULL) {
     v8::Handle<v8::Primitive> t = v8::Undefined(isolate);
     return v8::Handle<v8::String>::Cast(t);
+  }
+  if (buffer[0] == '\n') {
+    goto retry;
   }
   // Remove newline char
   for (char* pos = buffer; *pos != '\0'; pos++) {
@@ -92,13 +96,19 @@ void PrintNoN(const v8::FunctionCallbackInfo<v8::Value>& args) {
 v8::MaybeLocal<v8::String> GetsEx(int kBufferSize) {
   char *buffer = new char[kBufferSize+1];
 
+retry:
   char* res;
   {
     res = fgets(buffer, kBufferSize+1, stdin);
   }
   v8::Isolate* isolate = v8::Isolate::GetCurrent();
   if (res == NULL) {
-    buffer[0] = '\0';
+    delete[] buffer;
+    v8::Handle<v8::Primitive> t = v8::Undefined(isolate);
+    return v8::Handle<v8::String>::Cast(t);
+  }
+  if (buffer[0] == '\n') {
+    goto retry;
   }
 
   v8::MaybeLocal<v8::String> ret = v8::String::NewFromUtf8(isolate, buffer, v8::NewStringType::kNormal);
