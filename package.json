@@ -1,6 +1,6 @@
 {
   "name": "node-stdio",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "author": "lfbzhm",
   "description": "node io for command line",
   "keywords": [
@@ -16,7 +16,8 @@
     "cout"
   ],
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "testmock": "cat test/test.data | node test/test.js"
   },
   "homepage": "https://github.com/lifubang/nodecmd",
   "repository": "git://github.com/lifubang/nodecmd",
