@@ -24,6 +24,16 @@ function test() {
     cmd.printsth('Your input is:\n');
     cmd.printsth(input);
     cmd.printsth('\n');
+
+    cmd.print('Remain texts:');
+    cmd.print(cmd.gets(1024));
+
+    var a, b;
+    var solveMeFirst = (a,b) => a+b;
+    while((a=cmd.readInt())!=null && (b=cmd.readInt())!=null){
+        let c = solveMeFirst(a, b);
+        cmd.print(c);
+    }
 }
 
 module.exports = test;
