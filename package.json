@@ -16,8 +16,6 @@
     "cout"
   ],
   "scripts": {
-    "preinstall": "node-gyp configure && node-gyp build",
-    "pretest": "node-gyp configure && node-gyp build",
     "test": "node test/test.js"
   },
   "homepage": "https://github.com/lifubang/nodecmd",
