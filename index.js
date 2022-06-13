@@ -109,12 +109,12 @@ module.exports = {
     readInt: function() {
         let str = readStop(STOPCHAR);
         let num = parseInt(str);
-        return num;
+        return isNaN(num) ? null : num;
     },
     readDouble:  function() {
         let str = readStop(STOPCHAR);
         let num = parseFloat(str);
-        return num;
+        return isNaN(num) ? null : num;
     },
     read_line: function() {
         let str = readCounts(1024);
