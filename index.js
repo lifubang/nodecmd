@@ -119,5 +119,13 @@ module.exports = {
     read_line: function() {
         let str = readCounts(1024);
         return str;
+    },
+    readline: function() {
+        let str = readCounts(1024);
+        return str;
+    },
+    readLine: function() {
+        let str = readCounts(1024);
+        return str;
     }
 }

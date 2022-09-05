@@ -3,6 +3,7 @@
  */
 var cmd = require('../index');
 
+// TODO: we need to add some useful test cases.
 function test() {
     cmd.print('Please input a int:');
     cmd.print('The int num is:', cmd.readInt());
@@ -20,7 +21,7 @@ function test() {
     cmd.print(cmd.gets(10));
 
     cmd.printsth('Please input something:\n');
-    var input = cmd.read_line();
+    var input = cmd.readline();
     cmd.printsth('Your input is:\n');
     cmd.printsth(input);
     cmd.printsth('\n');
