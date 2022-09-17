@@ -1,0 +1,1 @@
+const stdio = require('../index')
