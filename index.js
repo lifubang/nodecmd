@@ -4,7 +4,7 @@
 const fs = require('fs');
 const stdout = process.stdout;
 
-const stdinFd = (process.platform === 'win32') ? process.stdin.fd : fs.openSync('/dev/stdin', 'rs+');
+const stdinFd = (process.platform === 'win32') ? process.stdin.fd : fs.openSync('/dev/stdin', 'r');
 const BUFSIZE = 128;
 const STOPCHAR = " \n,\r";
 
