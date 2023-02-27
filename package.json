@@ -1,6 +1,6 @@
 {
   "name": "node-stdio",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "author": "lfbzhm",
   "description": "node io for command line",
   "keywords": [
