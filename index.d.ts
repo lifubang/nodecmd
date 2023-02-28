@@ -3,13 +3,13 @@ declare module 'node-stdio' {
      * Read an int number from the standard input console
      * @returns int
      */
-    export function readInt() : Number
+    export function readInt() : number
 
     /**
      * Read a float number from the standard input console
      * @returns double
      */
-    export function readDouble() : Number
+    export function readDouble() : number
 
     /**
      * Read a line from the standard input console, the maxium length is 1024.
